@@ -16,16 +16,12 @@ const game = new Phaser.Game(config);
 
 // Load assets
 function preload() {
-    this.load.image('background', 'background.png');
-    this.load.image('player', 'player.png');
-    this.load.image('enemy', 'enemy.png');
+    this.load.image('player', 'sr25fab978dc2aws3.png');
+    this.load.image('enemy', 'openart-image_HdbJLJoD_1743849908086_raw.jpg');
 }
 
 // Create game objects
 function create() {
-    // Add background with transparency
-    this.add.image(0, 0, 'background').setOrigin(0, 0).setAlpha(0.5);
-
     // Create player
     this.player = this.physics.add.sprite(100, 100, 'player');
     this.player.setCollideWorldBounds(true);
